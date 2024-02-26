@@ -26,12 +26,14 @@ const questionDB = [
     ],
     answer: "All of the above",
   },
+
   {
     id: 4,
     question: "How can a datatype be declared to be a constant type?",
     options: ["const", "var", "let", "constant"],
     answer: "const",
   },
+
   {
     id: 5,
     question: "Which of the following is not a programming language?",
@@ -83,5 +85,4 @@ const questionDB = [
     answer: "Stack",
   },
 ];
-
 export default questionDB;

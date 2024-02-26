@@ -27,7 +27,9 @@ export default class App extends Component {
     };
   }
 
-  // LANGUAGE BASED QUIZ METHODS ARE BELOW :--
+  
+
+                  // LANGUAGE BASED QUIZ METHODS ARE BELOW :--
 
   handleFormSubmit = (e) => {
     e.preventDefault();
@@ -70,7 +72,8 @@ export default class App extends Component {
     });
   };
 
-  // DSA BASED QUIZ METHODS ARE BELOW :---
+                // DSA BASED QUIZ METHODS ARE BELOW :---
+
   DshandleOptionChange = (d) => {
     this.setState({ DsselectedOption: d.target.value });
   };
