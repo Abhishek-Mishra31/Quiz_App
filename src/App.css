@@ -4,7 +4,7 @@
   text-align: center;
   font-family: 'Lato', sans-serif;
   height: 100vh;
-  width:100vw;
+  width: 100vw;
   background-color: #a097ac;
 }
 
@@ -43,19 +43,23 @@
     transform: rotate(360deg);
   }
 }
-.nav-link{
+
+.nav-link {
   color: whitesmoke;
 
 }
+
 .container {
   margin-top: 80px;
+  background-color: #a097ac;
 }
 
 .quizBox {
-  
+
   margin-top: 100px;
   border: 3px solid rgb(231, 120, 9);
   border-radius: 32px 32px;
+  background-color: #a097ac;
 }
 
 .input {

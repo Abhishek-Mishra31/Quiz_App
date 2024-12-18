@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
   render() {
@@ -6,9 +7,9 @@ export default class Navbar extends Component {
       <div className="Nav">
         <nav className="navbar navbar-expand-lg dark bg-dark">
           <div className="container-fluid">
-            <h6 style={{color:'white'}}>Quiz.com</h6>
+            <h6 style={{ color: "white" }}>"Programiz"</h6>
             <button
-             className="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="/navbarSupportedContent"
@@ -18,23 +19,25 @@ export default class Navbar extends Component {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <Link className="nav-link" to="/">
                     Language Based Quiz
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/ds">
+                  <Link className="nav-link" to="/ds">
                     DSA Based Quiz
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <form className="d-flex" role="search">
                 <input
-                 className="form-control me-2"
+                  className="form-control me-2"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
