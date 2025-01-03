@@ -2,8 +2,7 @@ import React, { Component } from "react";
 
 export default class Dsoptions extends Component {
   render() {
-
-    const { options, selectedOption, onOptionChange } = this.props; 
+    const { options, selectedOption, onOptionChange } = this.props;
     return (
       <div className="options">
         {options.map((option, index) => (

@@ -8,6 +8,8 @@ import Dsquestions from "./Components/DSQUIZ/Dsquestions";
 import Dsquestion from "./Components/DSQUIZ/DBQuestion";
 import "./App.css";
 import DsScore from "./Components/DSQUIZ/DsScore";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 export default class App extends Component {
   constructor(props) {
@@ -27,9 +29,7 @@ export default class App extends Component {
     };
   }
 
-  
-
-                  // LANGUAGE BASED QUIZ METHODS ARE BELOW :--
+  // LANGUAGE BASED QUIZ METHODS ARE BELOW :--
 
   handleFormSubmit = (e) => {
     e.preventDefault();
@@ -72,8 +72,7 @@ export default class App extends Component {
     });
   };
 
-
-                // DSA BASED QUIZ METHODS ARE BELOW :---
+  // DSA BASED QUIZ METHODS ARE BELOW :---
 
   DshandleOptionChange = (d) => {
     this.setState({ DsselectedOption: d.target.value });
@@ -181,7 +180,10 @@ export default class App extends Component {
                 </>
               }
             />
+
+            <Route exact path="/contact" element={<Contact />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
     );

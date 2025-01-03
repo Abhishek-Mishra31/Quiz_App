@@ -7,7 +7,6 @@ export default class Dsquestions extends Component {
     return (
       <>
         <div className="container ">
-          <h2 style={{ color: "black" }}>Welcome To DSA Quiz Contest</h2>
           <div className="quizBox ">
             <h4 id="questionId" className="my-5">
               <u>Question {question.id}</u>

@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:ital@1&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .App {
   text-align: center;
-  font-family: 'Lato', sans-serif;
-  height: 100vh;
-  width: 100vw;
+  font-family: "Open Sans", serif;
+  height: 100%;
+  width: 100%;
   background-color: #a097ac;
+  border: 3px solid gray;
 }
 
 .App-logo {
@@ -44,18 +45,21 @@
   }
 }
 
+#root {
+  height: 100%;
+  background-color: gray;
+}
+
 .nav-link {
   color: whitesmoke;
-
 }
 
 .container {
-  margin-top: 80px;
+  margin-top: 120px;
   background-color: #a097ac;
 }
 
 .quizBox {
-
   margin-top: 100px;
   border: 3px solid rgb(231, 120, 9);
   border-radius: 32px 32px;
@@ -66,7 +70,6 @@
   padding: 6px 70px;
 }
 
-
 #btn {
   margin-top: 20px;
 }
@@ -76,7 +79,6 @@
   margin: auto;
   flex-direction: column;
   width: 500px;
-  border: 3px solid red;
   height: 250px;
   border-radius: 60px 34px;
 }
@@ -96,4 +98,88 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+.footerBox a {
+  color: black;
+}
+
+.footerBox {
+  margin-top: 70px;
+}
+
+.contact-page {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 3rem;
+  height: 320px;
+}
+
+.contact-page h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contact-page p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.icon {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.icon span {
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 640px) {
+  .App {
+    height: max-content;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 268px) {
+  .App {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .ContainerScore {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    border-radius: 60px 34px;
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .icon span {
+    margin-top: 5px;
+    font-size: 0.6em;
+  }
 }

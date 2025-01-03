@@ -7,9 +7,6 @@ export default class Question extends Component {
     return (
       <>
         <div className="container ">
-          <h2 style={{ color: "black" }}>
-            Welcome To Programming's Quiz Contest
-          </h2>
           <div className="quizBox ">
             <h4 id="questionId" className="my-5">
               <u>Question {question.id}</u>
