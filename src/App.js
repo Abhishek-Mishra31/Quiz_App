@@ -85,6 +85,7 @@ export default class App extends Component {
   };
 
   DscheckAnswer = () => {
+    // eslint-disable-next-line
     const { question, DscurrentQuestion, DsselectedOption, Dsscore } =
       this.state;
     if (DsselectedOption === question[DscurrentQuestion].answer) {
@@ -124,7 +125,9 @@ export default class App extends Component {
       DscurrentQuestion,
       question,
       DsselectedOption,
+      // eslint-disable-next-line
       DsonOptionChange,
+      // eslint-disable-next-line
       DsonSubmit,
       Dsscore,
       DsquizEnd,
