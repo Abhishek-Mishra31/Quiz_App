@@ -8,7 +8,7 @@ export default class Navbar extends Component {
         <nav className="border-gray-200 bg-gray dark:bg-gray-800 dark:border-gray-700">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a
-              href="#"
+              href="/"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <img
